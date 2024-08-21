@@ -1,0 +1,87 @@
+---
+title: "NickBlackfordWeek10"
+author: "Nick Blackford"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+## Thoracic Surgery Dataset 
+```{r}
+library(foreign)
+
+mydata <- read.arff("/Users/nickblackford/Downloads/ThoraricSurgery.arff")
+
+head(data)
+```
+```{r}
+library(MASS)
+# Multivariate logistic regression with stepwise selection
+full_model <- glm(Risk1Yr ~ PRE7 + PRE8 + PRE9 +PRE10 + PRE11 + PRE17 +PRE19 +PRE25 + PRE30 + PRE32, family = binomial, data = mydata)
+step_model <- stepAIC(full_model, direction = "both")
+summary(step_model)
+```
+```{r}
+
+#best model per stepwise selection 
+model1 <- glm(formula = Risk1Yr ~ PRE9 + PRE11 + PRE17 + PRE30, family = binomial, 
+    data = mydata)
+summary(model1)
+```
+PRE9T (1.1754): This variable has the largest coefficient, indicating that it has the strongest positive effect on the survival rate. It is statistically significant at the 0.01 level
+
+PRE17T (0.9940): This variable has the second-largest coefficient, suggesting a strong positive effect on the survival rate. It is statistically significant at the 0.05 level 
+PRE30T (0.8406): This variable has a positive effect on the survival rate, but it is only marginally significant at the 0.05 level.
+
+PRE11T (0.5232): This variable has the smallest coefficient among the significant predictors, indicating a weaker positive effect on the survival rate. It is not statistically significant at the 0.05 level.
+
+```{r}
+#  Predict probabilities
+predicted_probabilities <- predict(model1, type = "response")
+
+# Convert probabilities to binary predictions
+threshold <- 0.5
+predicted_outcomes <- ifelse(predicted_probabilities > threshold, 1, 0)
+
+# Calculate accuracy
+actual_outcomes <- mydata$Risk1Yr
+actual_outcomes_numeric <- as.numeric(actual_outcomes) - 1
+correct_predictions <- sum(predicted_outcomes == actual_outcomes_numeric)
+total_predictions <- length(predicted_outcomes)
+accuracy <- correct_predictions / total_predictions
+
+# Print the accuracy
+print(accuracy)
+```
+Accuracy for my model was 85% with a threshold of 0.5 to shift my probabilities into binary results. 
+
+## Binary Classifier Data 
+```{r, results='hide', echo=FALSE}
+library(dplyr)
+library(tidyverse)
+classifier_data <- read_csv('/Users/nickblackford/Downloads/binary-classifier-data.csv')
+```
+```{r}
+
+#logistic regression model
+log_model <- glm(formula = label ~ x + y, data = classifier_data)
+summary(log_model)
+```
+```{r}
+#  Predict probabilities
+predicted_probabilities_2 <- predict(log_model, type = "response")
+
+# Convert probabilities to binary predictions
+threshold_2 <- 0.5
+predicted_outcomes_2 <- ifelse(predicted_probabilities_2 > threshold_2, 1, 0)
+
+# Calculate accuracy
+actual_outcomes_2<- classifier_data$label
+correct_predictions_2 <- sum(predicted_outcomes_2 == actual_outcomes_2)
+total_predictions_2 <- length(predicted_outcomes_2)
+accuracy_2 <- correct_predictions_2 / total_predictions_2
+
+# Print the accuracy
+print(accuracy_2)
+```
+This model had an accuracy of 58% when comparing predicted to actual values. 
+
+
