@@ -1,8 +1,12 @@
+---
+layout: default
+title: DS Salary Prediction Model
+---
+
 # DS Salary Prediction Model
 
 ## Files
+- [README.md](./README.md)
 - [Salary_Prediction_Model.pdf](./Salary_Prediction_Model.pdf)
-
-- [Project Overview (README)](./README.md)
 
 [← Back to main portfolio](../index.md)

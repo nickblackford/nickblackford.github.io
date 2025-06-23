@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# List of your project folders
+# List of your actual project folders
 folders=(
   "ALS Patient Clustering"
   "Car Price Estimation Linear Regression"
@@ -24,21 +24,27 @@ do
   index_path="$folder/index.md"
   echo "Generating $index_path..."
 
-  # Start the index.md
-  echo "# $folder" > "$index_path"
-  echo "" >> "$index_path"
-  echo "## Files" >> "$index_path"
+  # Start index.md with YAML front matter
+  cat > "$index_path" << EOF
+---
+layout: default
+title: $folder
+---
 
-  # List all files except index.md and README.md
+# $folder
+
+## Files
+EOF
+
+  # List all files (skip index.md itself)
   for file in "$folder"/*; do
     filename=$(basename "$file")
-    if [[ "$filename" != "index.md" && "$filename" != "README.md" ]]; then
+    if [[ "$filename" != "index.md" ]]; then
       echo "- [$filename](./$filename)" >> "$index_path"
     fi
   done
 
-  echo "" >> "$index_path"
-  echo "- [Project Overview (README)](./README.md)" >> "$index_path"
+  # Add footer link
   echo "" >> "$index_path"
   echo "[← Back to main portfolio](../index.md)" >> "$index_path"
 done
