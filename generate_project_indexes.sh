@@ -27,7 +27,6 @@ do
   # Start the index file
   echo "# $folder" > "$index_path"
   echo "" >> "$index_path"
-  echo "This project explores key data science techniques. Below are the included files:" >> "$index_path"
   echo "" >> "$index_path"
   echo "## Files" >> "$index_path"
 
