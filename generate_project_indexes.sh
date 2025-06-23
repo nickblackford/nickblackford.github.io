@@ -23,6 +23,7 @@ do
   index_path="$folder/index.md"
   echo "Generating $index_path..."
 
+  # Start writing full file content
   {
     echo "---"
     echo "layout: default"
@@ -34,20 +35,13 @@ do
     echo "## Files"
     echo ""
 
-    # loop through files
-    found_files=false
+    # list files
     for file in "$folder"/*; do
       filename=$(basename "$file")
       if [[ "$filename" != "index.md" ]]; then
         echo "- [$filename](./$filename)"
-        found_files=true
       fi
     done
-
-    # Show message if no files were listed
-    if [ "$found_files" = false ]; then
-      echo "_No files found in this project folder._"
-    fi
 
     echo ""
     echo "[← Back to main portfolio](../index.md)"
