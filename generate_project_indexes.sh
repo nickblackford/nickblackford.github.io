@@ -1,49 +1,29 @@
 #!/bin/bash
 
-folders=(
-  "ALS Patient Clustering"
-  "Car Price Estimation Linear Regression"
-  "CNN Image Classification"
-  "Customer Review Sentiment Analysis"
-  "Data Pipeline Building"
-  "Data Viz : Business Recommendations"
-  "DS Salary Prediction Model"
-  "Fantasy Football Predictive Model"
-  "Fuel Efficiency Regression"
-  "Heart Disease Classification"
-  "Iris Data Viz"
-  "Loan Approval Logistic Regression"
-  "Movie Recommender System"
-  "Supervised Learning Diabtetes Detection"
-  "Survival Logistic Regression"
-)
+# Loop through each project directory (skip .git and any hidden/system folders)
+for dir in */ ; do
+  # Skip system and root directories
+  [[ "$dir" == ".git/" || "$dir" == "_site/" || "$dir" == .* ]] && continue
 
-for folder in "${folders[@]}"
-do
-  index_path="$folder/index.md"
-  echo "Generating $index_path..."
+  # Remove trailing slash
+  dirname="${dir%/}"
 
-  # Start writing full file content
-  {
-    echo "---"
-    echo "layout: default"
-    echo "title: $folder"
-    echo "---"
-    echo ""
-    echo "# $folder"
-    echo ""
-    echo "## Files"
-    echo ""
+  # Create the index.md file
+  cat <<EOF > "$dir/index.md"
+# $dirname
 
-    # list files
-    for file in "$folder"/*; do
+## Files
+
+EOF
+
+  # List files (not subfolders) in the project directory
+  for file in "$dir"*; do
+    if [[ -f "$file" ]]; then
       filename=$(basename "$file")
-      if [[ "$filename" != "index.md" ]]; then
-        echo "- [$filename](./$filename)"
-      fi
-    done
+      echo "- [${filename}](./${filename})" >> "$dir/index.md"
+    fi
+  done
 
-    echo ""
-    echo "[← Back to main portfolio](../index.md)"
-  } > "$index_path"
+  # Add back link to homepage
+  echo -e "\n[⬅️ Back to Home](../)" >> "$dir/index.md"
 done

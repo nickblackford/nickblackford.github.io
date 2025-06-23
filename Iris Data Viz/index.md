@@ -1,8 +1,3 @@
----
-layout: default
-title: Iris Data Viz
----
-
 # Iris Data Viz
 
 ## Files
@@ -10,5 +5,6 @@ title: Iris Data Viz
 - [IrisAnalysis.Rmd](./IrisAnalysis.Rmd)
 - [IrisAnalysis.pdf](./IrisAnalysis.pdf)
 - [README.md](./README.md)
+- [index.md](./index.md)
 
-[← Back to main portfolio](../index.md)
+[⬅️ Back to Home](../)

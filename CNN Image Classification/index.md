@@ -1,8 +1,3 @@
----
-layout: default
-title: CNN Image Classification
----
-
 # CNN Image Classification
 
 ## Files
@@ -10,5 +5,6 @@ title: CNN Image Classification
 - [CNN Image Classifier.ipynb](./CNN Image Classifier.ipynb)
 - [CNN Image Classifier.pdf](./CNN Image Classifier.pdf)
 - [README.md](./README.md)
+- [index.md](./index.md)
 
-[← Back to main portfolio](../index.md)
+[⬅️ Back to Home](../)

@@ -1,8 +1,3 @@
----
-layout: default
-title: Movie Recommender System
----
-
 # Movie Recommender System
 
 ## Files
@@ -10,5 +5,6 @@ title: Movie Recommender System
 - [README.md](./README.md)
 - [Recommender_System_Code.ipynb](./Recommender_System_Code.ipynb)
 - [Recommender_System_Documentation.pdf](./Recommender_System_Documentation.pdf)
+- [index.md](./index.md)
 
-[← Back to main portfolio](../index.md)
+[⬅️ Back to Home](../)

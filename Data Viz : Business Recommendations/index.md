@@ -1,8 +1,3 @@
----
-layout: default
-title: Data Viz : Business Recommendations
----
-
 # Data Viz : Business Recommendations
 
 ## Files
@@ -10,5 +5,6 @@ title: Data Viz : Business Recommendations
 - [Dodgers_Attendance_Analysis.ipynb](./Dodgers_Attendance_Analysis.ipynb)
 - [Dodgers_Attendance_Analysis.pdf](./Dodgers_Attendance_Analysis.pdf)
 - [README.md](./README.md)
+- [index.md](./index.md)
 
-[← Back to main portfolio](../index.md)
+[⬅️ Back to Home](../)

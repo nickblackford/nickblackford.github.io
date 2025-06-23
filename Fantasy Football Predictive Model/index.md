@@ -1,8 +1,3 @@
----
-layout: default
-title: Fantasy Football Predictive Model
----
-
 # Fantasy Football Predictive Model
 
 ## Files
@@ -10,5 +5,6 @@ title: Fantasy Football Predictive Model
 - [FantasyFootballPredictionCode.ipynb](./FantasyFootballPredictionCode.ipynb)
 - [FantasyFootballPredictionPaper.pdf](./FantasyFootballPredictionPaper.pdf)
 - [README.md](./README.md)
+- [index.md](./index.md)
 
-[← Back to main portfolio](../index.md)
+[⬅️ Back to Home](../)

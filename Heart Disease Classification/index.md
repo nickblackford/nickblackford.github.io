@@ -1,8 +1,3 @@
----
-layout: default
-title: Heart Disease Classification
----
-
 # Heart Disease Classification
 
 ## Files
@@ -11,5 +6,6 @@ title: Heart Disease Classification
 - [Heart_Disease_Prediction_Doc.pdf](./Heart_Disease_Prediction_Doc.pdf)
 - [Heart_Disease_Prediction_Project_Writeup.docx](./Heart_Disease_Prediction_Project_Writeup.docx)
 - [README.md](./README.md)
+- [index.md](./index.md)
 
-[← Back to main portfolio](../index.md)
+[⬅️ Back to Home](../)
