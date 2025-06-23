@@ -18,7 +18,8 @@ folders=(
   "Survival Logistic Regression"
 )
 
-for folder in "${folders[@]}"; do
+for folder in "${folders[@]}"
+do
   index_path="$folder/index.md"
   echo "Generating $index_path..."
 
@@ -33,12 +34,20 @@ for folder in "${folders[@]}"; do
     echo "## Files"
     echo ""
 
+    # loop through files
+    found_files=false
     for file in "$folder"/*; do
-      fname=$(basename "$file")
-      if [[ "$fname" != "index.md" ]]; then
-        echo "- [$fname](./$fname)"
+      filename=$(basename "$file")
+      if [[ "$filename" != "index.md" ]]; then
+        echo "- [$filename](./$filename)"
+        found_files=true
       fi
     done
+
+    # Show message if no files were listed
+    if [ "$found_files" = false ]; then
+      echo "_No files found in this project folder._"
+    fi
 
     echo ""
     echo "[← Back to main portfolio](../index.md)"
