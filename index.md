@@ -1,64 +1,19 @@
----
-layout: default
-title: Nick Blackford Portfolio
----
+# Nick Blackford – Data Science Portfolio
 
-# Nick Blackford Portfolio
+Explore my end-to-end data science projects:
 
-I'm a data scientist with a Master's in Data Science and 3 years of industry experience in advanced data analysis, predictive analytics, visualization, model building, and end-to-end pipeline development. I specialize in delivering insights that drive real-world impact and effective decision making.
-
----
-
-## Projects
-
-### Fantasy Football Predictive Model  
-[Explore ›](./Fantasy%20Football%20Predictive%20Model/)
-
-### ALS Patient Clustering  
-[Explore ›](./ALS%20Patient%20Clustering/)
-
-### DS Salary Prediction Model  
-[Explore ›](./DS%20Salary%20Prediction%20Model/)
-
-### Dodgers Game Attendance Analysis  
-[Explore ›](./Data%20Viz%20:%20Business%20Recommendations/)
-
-### Data Pipeline: Titanic ETL Workflow  
-[Explore ›](./Data%20Pipeline%20Building/)
-
-### Sentiment Analysis  
-[Explore ›](./Customer%20Review%20Sentiment%20Analysis/)
-
-### Car Price Estimation  
-[Explore ›](./Car%20Price%20Estimation%20Linear%20Regression/)
-
-### Heart Disease Prediction  
-[Explore ›](./Heart%20Disease%20Classification/)
-
-### Fuel Efficiency Regression  
-[Explore ›](./Fuel%20Efficiency%20Regression/)
-
-### Survival Analysis with Logistic Regression  
-[Explore ›](./Survival%20Logistic%20Regression/)
-
-### Loan Approval Model Selection  
-[Explore ›](./Loan%20Approval%20Logistic%20Regression/)
-
-### CNN Image Classification  
-[Explore ›](./CNN%20Image%20Classification/)
-
-### Movie Recommender System  
-[Explore ›](./Movie%20Recommender%20System/)
-
-### Diabetes Detection  
-[Explore ›](./Supervised%20Learning%20Diabtetes%20Detection/)
-
-### Iris Data Visualization  
-[Explore ›](./Iris%20Data%20Viz/)
-
----
-
-## Contact
-
-- [GitHub](https://github.com/nickblackford)
-- [LinkedIn](https://www.linkedin.com/in/nickblackford)
+- [ALS Patient Clustering](./als_patient_clustering/)
+- [CNN Image Classification](./cnn_image_classification/)
+- [Car Price Estimation (Linear Regression)](./car_price_estimation_linear_regression/)
+- [Customer Review Sentiment Analysis](./customer_review_sentiment_analysis/)
+- [DS Salary Prediction Model](./ds_salary_prediction_model/)
+- [Data Pipeline Building](./data_pipeline_building/)
+- [Data Viz: Business Recommendations](./data_viz_business_recommendations/)
+- [Fantasy Football Predictive Model](./fantasy_football_predictive_model/)
+- [Fuel Efficiency Regression](./fuel_efficiency_regression/)
+- [Heart Disease Classification](./heart_disease_classification/)
+- [Iris Data Visualization](./iris_data_viz/)
+- [Loan Approval (Logistic Regression)](./loan_approval_logistic_regression/)
+- [Movie Recommender System](./movie_recommender_system/)
+- [Supervised Learning: Diabetes Detection](./supervised_learning_diabetes_detection/)
+- [Survival (Logistic Regression)](./survival_logistic_regression/)
