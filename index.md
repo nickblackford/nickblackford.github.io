@@ -17,3 +17,4 @@ Explore my end-to-end data science projects:
 - [Movie Recommender System](./movie_recommender_system/)
 - [Supervised Learning: Diabetes Detection](./supervised_learning_diabetes_detection/)
 - [Survival (Logistic Regression)](./survival_logistic_regression/)
+
