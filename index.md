@@ -1,4 +1,4 @@
-# Welcome to My Data Science Portfolio
+# Nick Blackford Portfolio
 
 Hi, I'm **Nick Blackford**, a data scientist with over 3 years of experience delivering value through advanced analytics, machine learning, data storytelling, and scalable pipelines. I'm a Master of Data Science recipient, passionate about using data to drive real-world impact and effective decision making.
 
