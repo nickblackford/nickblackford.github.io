@@ -1,0 +1,50 @@
+---
+title: "Housing Data Analysis"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(purrr)
+library(readxl)
+```
+
+```{r}
+housing_data <- read_excel("week-6-housing.xlsx")
+
+grouped_data <- housing_data %>%
+  group_by(ctyname) %>%
+  summarize(avg_sale_price = mean(`Sale Price`, na.rm = TRUE))
+
+housing_data <- housing_data %>%
+  mutate(property_age = 2024 - year_built)
+
+housing_data$`Sale Date` <- as.Date(housing_data$`Sale Date`)
+filtered_data <- housing_data %>%
+  filter(as.numeric(format(`Sale Date`, "%Y")) > 2015)
+
+selected_data <- housing_data %>%
+  select(`Sale Price`, bedrooms, sq_ft_lot)
+
+arranged_data <- housing_data %>%
+  arrange(desc(`Sale Price`))
+
+kept_columns <- keep(housing_data, is.numeric)
+discarded_columns <- discard(housing_data, is.numeric)
+
+cbound_data <- cbind(housing_data, additional_col = 1:nrow(housing_data))
+rbound_data <- rbind(housing_data, housing_data)
+
+
+split_address <- strsplit(as.character(housing_data$addr_full), " ")
+concatenated_address <- sapply(split_address, paste, collapse = "-")
+
+# Results
+grouped_data
+housing_data 
+filtered_data 
+selected_data 
+arranged_data 
+kept_columns
+```
