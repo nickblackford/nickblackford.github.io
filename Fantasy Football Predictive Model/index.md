@@ -5,6 +5,5 @@
 - [FantasyFootballPredictionCode.ipynb](./FantasyFootballPredictionCode.ipynb)
 - [FantasyFootballPredictionPaper.pdf](./FantasyFootballPredictionPaper.pdf)
 - [README.md](./README.md)
-- [index.md](./index.md)
 
-[⬅️ Back to Home](../)
+[← Back to main portfolio](../index.md)

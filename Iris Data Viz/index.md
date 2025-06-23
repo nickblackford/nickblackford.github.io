@@ -5,6 +5,5 @@
 - [IrisAnalysis.Rmd](./IrisAnalysis.Rmd)
 - [IrisAnalysis.pdf](./IrisAnalysis.pdf)
 - [README.md](./README.md)
-- [index.md](./index.md)
 
-[⬅️ Back to Home](../)
+[← Back to main portfolio](../index.md)

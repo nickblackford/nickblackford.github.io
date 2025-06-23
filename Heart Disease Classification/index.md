@@ -6,6 +6,5 @@
 - [Heart_Disease_Prediction_Doc.pdf](./Heart_Disease_Prediction_Doc.pdf)
 - [Heart_Disease_Prediction_Project_Writeup.docx](./Heart_Disease_Prediction_Project_Writeup.docx)
 - [README.md](./README.md)
-- [index.md](./index.md)
 
-[⬅️ Back to Home](../)
+[← Back to main portfolio](../index.md)
