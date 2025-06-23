@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# List of your actual project folders
 folders=(
   "ALS Patient Clustering"
   "Car Price Estimation Linear Regression"
@@ -19,32 +18,29 @@ folders=(
   "Survival Logistic Regression"
 )
 
-for folder in "${folders[@]}"
-do
+for folder in "${folders[@]}"; do
   index_path="$folder/index.md"
   echo "Generating $index_path..."
 
-  # Start index.md with YAML front matter
-  cat > "$index_path" << EOF
----
-layout: default
-title: $folder
----
+  {
+    echo "---"
+    echo "layout: default"
+    echo "title: $folder"
+    echo "---"
+    echo ""
+    echo "# $folder"
+    echo ""
+    echo "## Files"
+    echo ""
 
-# $folder
+    for file in "$folder"/*; do
+      fname=$(basename "$file")
+      if [[ "$fname" != "index.md" ]]; then
+        echo "- [$fname](./$fname)"
+      fi
+    done
 
-## Files
-EOF
-
-  # List all files (skip index.md itself)
-  for file in "$folder"/*; do
-    filename=$(basename "$file")
-    if [[ "$filename" != "index.md" ]]; then
-      echo "- [$filename](./$filename)" >> "$index_path"
-    fi
-  done
-
-  # Add footer link
-  echo "" >> "$index_path"
-  echo "[← Back to main portfolio](../index.md)" >> "$index_path"
+    echo ""
+    echo "[← Back to main portfolio](../index.md)"
+  } > "$index_path"
 done
