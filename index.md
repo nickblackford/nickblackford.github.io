@@ -31,7 +31,7 @@
   <div class="about-text">
     <h2>About Me</h2>
     <p>
-      I’m a data scientist with 4 years of experience owning end-to-end analytics projects that drive enterprise-level change and operational efficiency. I’m known for stepping into ambiguity, aligning stakeholders, and delivering models and insights that don’t just analyze the business — they move it forward. I hold a Master’s in Data Science and thrive at the intersection of business strategy and technical execution.
+      I’m a data scientist with 4 years of experience leading analytics and machine learning projects from ambiguous problem to actionable solution. I specialize in owning the full lifecycle — from pipeline design and data cleaning to modeling, interpretation, and presenting insights to both technical and non-technical audiences. I hold a Master’s in Data Science and thrive in spaces where business context and technical depth meet.
     </p>
   </div>
 </div>
