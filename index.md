@@ -9,7 +9,7 @@
 
   .about-container img {
     border-radius: 8px;
-    width: 150px;
+    width: 220px;
   }
 
   .about-text {
