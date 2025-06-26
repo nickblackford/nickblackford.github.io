@@ -25,7 +25,7 @@ Predicts fantasy football points using historical NFL data and regression. Combi
 
 ---
 
-## 🧠 All Projects (Grouped by Skill)
+## All Projects (Grouped by Skill)
 
 ### 🧮 Regression Models
 - [Car Price Estimation](./car_price_estimation_linear_regression/)
