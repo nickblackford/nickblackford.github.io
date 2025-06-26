@@ -31,7 +31,7 @@
   <div class="about-text">
     <h2>About Me</h2>
     <p>
-      I’m a data scientist with 4 years of experience leading analytics and machine learning projects from ambiguous problem to actionable solution. I specialize in owning the full lifecycle — from pipeline design and data cleaning to modeling, interpretation, and presenting insights to both technical and non-technical audiences. I hold a Master’s in Data Science and thrive in spaces where business context and technical depth meet.
+      I’m a data scientist with 4 years of experience leading analytics and machine learning projects from ambiguous problems to actionable solutions. I specialize in owning the full lifecycle — from pipeline design and data cleaning to modeling, interpretation, and presenting insights to both technical and non-technical audiences. I hold a Master’s in Data Science and thrive in spaces where business context and technical depth meet.
     </p>
   </div>
 </div>
