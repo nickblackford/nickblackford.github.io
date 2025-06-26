@@ -1,45 +1,47 @@
 # Nick Blackford – Data Science Portfolio
 
-Explore my end-to-end data science projects:
+## 👋 About Me
 
-### [ALS Patient Clustering](./als_patient_clustering/)
-Predicts ALS patient clusters using KMeans and PCA for dimensionality reduction.
+I’m a data scientist with 4 years of experience owning end-to-end analytics projects that drive enterprise-level change and operational efficiency. I’m known for stepping into ambiguity, aligning stakeholders, and delivering models and insights that don’t just analyze the business — they move it forward. I hold a Master’s in Data Science and thrive at the intersection of business strategy and technical execution.
 
-### [Car Price Estimation Linear Regression](./car_price_estimation_linear_regression/)
-Estimates car prices with linear regression using engine and model data.
+## 🔥 Highlighted Projects
 
-### [Cnn Image Classification](./cnn_image_classification/)
-Classifies images using a convolutional neural network trained on labeled image data.
+### [Tabular Neural Network](./tabular_neural_network/)
+Predicts structured data outcomes using a deep learning model built for tabular inputs.
 
-### [Customer Review Sentiment Analysis](./customer_review_sentiment_analysis/)
-Analyzes sentiment in customer reviews using NLP techniques.
-
-### [Data Pipeline Building](./data_pipeline_building/)
-Constructs a full data pipeline using NiFi, HDFS, Hive, and Spark.
-
-### [Data Viz Business Recommendations](./data_viz_business_recommendations/)
-Visualizes business data to support decisions using dashboards and insights.
-
-### [Ds Salary Prediction Model](./ds_salary_prediction_model/)
-Predicts data science salaries based on experience, company size, and location.
+### [Resume Tailor GenAI](./resume_tailor_genai/)
+Uses a generative AI agent to customize resumes to job descriptions using NLP and LLMs.
 
 ### [Fantasy Football Predictive Model](./fantasy_football_predictive_model/)
-Predicts fantasy football points using historical NFL data and regression.
+Predicts fantasy football points using historical NFL data and regression. Combines feature engineering, ensemble models, and SHAP interpretability.
 
-### [Fuel Efficiency Regression](./fuel_efficiency_regression/)
-Estimates vehicle fuel efficiency using regression models.
+---
 
-### [Heart Disease Classification](./heart_disease_classification/)
-Classifies patients at risk of heart disease using machine learning models.
+## 🧠 All Projects (Grouped by Skill)
 
-### [Loan Approval Logistic Regression](./loan_approval_logistic_regression/)
-Predicts loan approval outcomes using logistic regression and tuning.
+### 🧮 Regression Models
+- [Car Price Estimation](./car_price_estimation_linear_regression/)
+- [Fuel Efficiency Regression](./fuel_efficiency_regression/)
 
-### [Movie Recommender System](./movie_recommender_system/)
-Recommends movies using collaborative filtering and similarity measures.
+### 🧬 Classification Models
+- [Heart Disease Classification](./heart_disease_classification/)
+- [Loan Approval Logistic Regression](./loan_approval_logistic_regression/)
+- [Supervised Learning Diabetes Detection](./supervised_learning_diabetes_detection/)
+- [Survival Logistic Regression](./survival_logistic_regression/)
 
-### [Supervised Learning Diabetes Detection](./supervised_learning_diabetes_detection/)
-Detects diabetes risk using supervised learning on health data.
+### 🤖 NLP & Sentiment
+- [Customer Review Sentiment Analysis](./customer_review_sentiment_analysis/)
+- [Resume Tailor GenAI](./resume_tailor_genai/)
 
-### [Survival Logistic Regression](./survival_logistic_regression/)
-Models survival outcomes using logistic regression on clinical data.
+### 🧰 ML Infrastructure & Pipelines
+- [Data Pipeline Building](./data_pipeline_building/)
+
+### 📊 Data Visualization
+- [Data Viz Business Recommendations](./data_viz_business_recommendations/)
+
+### 🧠 Deep Learning & Neural Networks
+- [CNN Image Classification](./cnn_image_classification/)
+- [Tabular Neural Network](./tabular_neural_network/)
+
+### 🎓 Clustering & Unsupervised
+- [ALS Patient Clustering](./als_patient_clustering/)
