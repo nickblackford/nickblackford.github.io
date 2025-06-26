@@ -1,15 +1,41 @@
-<div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 30px;">
+<style>
+  .about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
 
-  <img src="./profile.jpeg" alt="Nick Blackford" width="220" style="border-radius: 8px;" />
+  .about-container img {
+    border-radius: 8px;
+    width: 150px;
+  }
 
-  <div>
+  .about-text {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  @media (max-width: 600px) {
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+</style>
+
+<div class="about-container">
+  <img src="./profile.jpeg" alt="Nick Blackford" />
+  <div class="about-text">
     <h2>About Me</h2>
     <p>
       I’m a data scientist with 4 years of experience owning end-to-end analytics projects that drive enterprise-level change and operational efficiency. I’m known for stepping into ambiguity, aligning stakeholders, and delivering models and insights that don’t just analyze the business — they move it forward. I hold a Master’s in Data Science and thrive at the intersection of business strategy and technical execution.
     </p>
   </div>
-
 </div>
+
 
 
 ## Highlighted Projects
