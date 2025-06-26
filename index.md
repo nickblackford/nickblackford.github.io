@@ -12,7 +12,7 @@
 </div>
 
 
-## 🔥 Highlighted Projects
+## Highlighted Projects
 
 ### [Tabular Neural Network](./tabular_neural_network/)
 Predicts structured data outcomes using a deep learning model built for tabular inputs.
