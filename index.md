@@ -1,6 +1,6 @@
 <div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 30px;">
 
-  <img src="./profile.jpeg" alt="Nick Blackford" width="300" style="border-radius: 8px;" />
+  <img src="./profile.jpeg" alt="Nick Blackford" width="200" style="border-radius: 8px;" />
 
   <div>
     <h2>About Me</h2>
