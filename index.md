@@ -1,5 +1,3 @@
-# Nick Blackford – Data Science Portfolio
-
 ## 👋 About Me
 
 I’m a data scientist with 4 years of experience owning end-to-end analytics projects that drive enterprise-level change and operational efficiency. I’m known for stepping into ambiguity, aligning stakeholders, and delivering models and insights that don’t just analyze the business — they move it forward. I hold a Master’s in Data Science and thrive at the intersection of business strategy and technical execution.
@@ -22,6 +20,8 @@ Predicts fantasy football points using historical NFL data and regression. Combi
 ### 🧮 Regression Models
 - [Car Price Estimation](./car_price_estimation_linear_regression/)
 - [Fuel Efficiency Regression](./fuel_efficiency_regression/)
+- [Fantasy Football Predictive Model](./fantasy_football_predictive_model/)
+
 
 ### 🧬 Classification Models
 - [Heart Disease Classification](./heart_disease_classification/)
