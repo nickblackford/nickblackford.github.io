@@ -1,8 +1,16 @@
-<img src="./profile.jpeg" alt="Nick Blackford" width="150" style="border-radius: 50%; display: block; margin: 0 auto;" />
+<div style="display: flex; align-items: flex-start; gap: 20px; margin-bottom: 30px;">
 
-## 👋 About Me
+  <img src="./profile.jpeg" alt="Nick Blackford" width="150" style="border-radius: 8px;" />
 
-I’m a data scientist with 4 years of experience owning end-to-end analytics projects that drive enterprise-level change and operational efficiency. I’m known for stepping into ambiguity, aligning stakeholders, and delivering models and insights that don’t just analyze the business — they move it forward. I hold a Master’s in Data Science and thrive at the intersection of business strategy and technical execution.
+  <div>
+    <h2>About Me</h2>
+    <p>
+      I’m a data scientist with 4 years of experience owning end-to-end analytics projects that drive enterprise-level change and operational efficiency. I’m known for stepping into ambiguity, aligning stakeholders, and delivering models and insights that don’t just analyze the business — they move it forward. I hold a Master’s in Data Science and thrive at the intersection of business strategy and technical execution.
+    </p>
+  </div>
+
+</div>
+
 
 ## 🔥 Highlighted Projects
 
