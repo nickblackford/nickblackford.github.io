@@ -40,8 +40,9 @@
 
 ## Highlighted Projects
 
-### [Tabular Neural Network](./tabular_neural_network/)
-Predicts structured data outcomes using a deep learning model built for tabular inputs.
+
+### [Predicting Churn Using Neural Networks](./tabular_neural_network/)
+Uses fastai tabular neural networks to predict customer churn and compares performance to classical ML models.
 
 ### [Resume Tailor GenAI](./resume_tailor_genai/)
 Uses a generative AI agent to customize resumes to job descriptions using NLP and LLMs.
