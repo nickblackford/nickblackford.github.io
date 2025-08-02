@@ -81,3 +81,15 @@ Predicts fantasy football points using historical NFL data and regression. Combi
 
 ### 🎓 Clustering & Unsupervised
 - [ALS Patient Clustering](./als_patient_clustering/)
+
+
+---
+
+## Contact
+
+I'm always open to connecting or collaborating.
+
+-  Email: [blackford9998@gmail.com](mailto:blackford9998@gmail.com)  
+-  LinkedIn: [nblackford](https://www.linkedin.com/in/nblackford/)  
+-  GitHub Repo: [nickblackford.github.io](https://github.com/nickblackford/nickblackford.github.io/tree/main)
+
